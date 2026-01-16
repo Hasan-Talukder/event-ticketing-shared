@@ -1,3 +1,3 @@
 /** @format */
-export * from "./rmq.constants";
-export * from "./rmq.options";
+import { RmqOptions } from "@nestjs/microservices";
+export declare function rmqServerOptions(url: string, queue: string): RmqOptions;

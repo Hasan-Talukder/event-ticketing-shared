@@ -3,13 +3,17 @@
     "version": "0.1.0",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
-    "files": ["dist"],
+    "files": [
+        "dist"
+    ],
     "scripts": {
-      "build": "tsc -p ./tsconfig.json",
-      "prepare": "npm run build"
+        "build": "tsc -p ./tsconfig.json",
+        "prepare": "npm run build"
     },
     "devDependencies": {
-      "typescript": "^5.0.0"
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "@nestjs/microservices": "^11.1.12"
     }
-  }
-  
+}
